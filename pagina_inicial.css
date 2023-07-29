@@ -24,15 +24,32 @@ body {
     max-width: 72rem;
 }
 
-.header-banner nav{
-    border: solid 2px blue;
-    padding: 20px;
-    text-align: end;
+.hero-menu nav li {
+    display: inline-block;
+    list-style-type: none;
 }
+
+ .header-banner nav{
+    padding: 20px;
+    text-align: right;
+} 
 
 .header-banner a{
     text-decoration: none;
     color: var(--white);
+    border: 1px solid var(--bg-color);
+    border-radius: 10px;
+    margin-left: 15px;
+    padding: 10px;
+    background-color: var(--contrast-color-02);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.header-banner a:hover{
+    background-color: var(--contrast-color-01);
 }
 
 .header-banner li{
@@ -41,7 +58,7 @@ body {
 
 .header-banner {
     background-image: url(./assets/img-banner02.jpeg);
-    height: 500px;
+    height: 400px;
     background-position: center;
     background-size: cover;
 }
@@ -50,7 +67,7 @@ body {
     margin: 50px auto 0;
     width: 80%;
     text-align: center;
-    color: var(--white);
+    color: var(--bg-color);
 }
 
 h1 {
@@ -62,7 +79,7 @@ h1 {
 
 
 .header-banner span {
-    background-color: rgb(124, 158, 166, .7);
+    background-color: rgb(124, 158, 166, .9);
     display: inline-block;
     padding: 15px;
     border-bottom: solid 5px var(--contrast-color-02);
@@ -71,4 +88,53 @@ h1 {
 
 h2 {
     font-family: 'Tektur', sans-serif;
+}
+
+main .article-content{
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: var(--contrast-color-01);
+    padding: 30px;    
+}
+
+main .article-content:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+main .article-header{
+    background-color: var(--bg-color);
+    padding: 10px;
+    color: var(--contrast-color-02);
+    border-radius: 10px;
+    border-bottom: 4px solid var(--contrast-color-02);
+    margin-bottom: 20px;
+}
+
+main .article-content p{
+    color: var(--bg-color);
+    margin-bottom: 20px;
+}
+
+main .article-content a{
+    display: block;
+    margin-left: auto;
+    width: fit-content;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--contrast-color-03);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main .article-content a:hover{
+    background-color: #cfa08e;
+}
+
+footer {
+    background-color: var(--contrast-color-02);
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    color: var(--white);
 }
